@@ -14,5 +14,10 @@ namespace WhatsAppLinkGenerator.API.Data_Transfer_Objects
             PhoneNumber = phoneNumber.Trim();
             Text = text.Trim();
         }
+
+        public void ChangePhoneNumber(string PhoneNumber)
+        {
+            this.PhoneNumber = PhoneNumber;
+        }
     }
 }
