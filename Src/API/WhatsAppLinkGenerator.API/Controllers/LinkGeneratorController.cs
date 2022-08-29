@@ -4,8 +4,9 @@ using WhatsAppLinkGenerator.API.Data_Transfer_Objects;
 
 namespace WhatsAppLinkGenerator.API.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [ApiVersion("1.0")]
+    [Route("api/v1.0/[controller]")]
     public class LinkGeneratorController : ControllerBase
     {
         [HttpPost]
